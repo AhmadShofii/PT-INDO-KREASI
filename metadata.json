@@ -1,0 +1,8 @@
+{
+  "name": "PT Indo Kreasi — Corporate Supplier & B2B Sourcing Partner",
+  "description": "Website resmi profil perusahaan dan katalog produk supplier B2B PT Indo Kreasi. Solusi pengadaan terpercaya untuk kebutuhan operasional bisnis Anda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

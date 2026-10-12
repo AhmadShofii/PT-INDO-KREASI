@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1F3040;
+  --color-primary-light: #2A4259;
+  --color-primary-dark: #162330;
+  --color-bg-ivory: #F7F5F0;
+  --color-accent-copper: #A36E53;
+  --color-accent-copper-hover: #8D5C43;
+  --color-accent-copper-light: #F4EBE6;
+  --color-secondary-sage: #76847B;
+  --color-secondary-sage-light: #EFF2F0;
+  --color-text-charcoal: #24303A;
+  --color-text-muted: #5C6B77;
+  --color-border-light: #E2E4E0;
+  --color-surface-white: #FFFFFF;
+
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-pixel: 'Silkscreen', 'Press Start 2P', monospace;
+}
+
+:root {
+  color-scheme: light;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #F7F5F0;
+  color: #24303A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Scrollbar for modern industrial feel */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F5F0;
+}
+::-webkit-scrollbar-thumb {
+  background: #D3D6D2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #76847B;
+}
+
+/* Accessible focus ring */
+*:focus-visible {
+  outline: 2px solid #A36E53;
+  outline-offset: 2px;
+}
+
+/* ----------------------------------------------------
+   MINECRAFT THEME OVERRIDES & VOXEL RETRO STYLING
+   ---------------------------------------------------- */
+.theme-minecraft {
+  font-family: 'Silkscreen', monospace !important;
+  background-color: #2e382e !important;
+  background-image: 
+    radial-gradient(#3c4a3c 15%, transparent 16%),
+    radial-gradient(#252e25 15%, transparent 16%);
+  background-size: 32px 32px;
+  background-position: 0 0, 16px 16px;
+  color: #E0E0E0 !important;
+}
+
+.theme-minecraft h1,
+.theme-minecraft h2,
+.theme-minecraft h3,
+.theme-minecraft h4,
+.theme-minecraft h5,
+.theme-minecraft h6 {
+  font-family: 'Silkscreen', monospace !important;
+  letter-spacing: -0.5px;
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.theme-minecraft .mc-panel {
+  background-color: #313338 !important;
+  border: 4px solid !important;
+  border-color: #585b63 #1e1f22 #1e1f22 #585b63 !important;
+  box-shadow: 4px 4px 0px #000000 !important;
+  border-radius: 0px !important;
+}
+
+.theme-minecraft .mc-btn {
+  background-color: #4e5058 !important;
+  border: 3px solid !important;
+  border-color: #80848e #1e1f22 #1e1f22 #80848e !important;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 0px #000000 !important;
+  box-shadow: 3px 3px 0px #000000 !important;
+  border-radius: 0px !important;
+  font-family: 'Silkscreen', monospace !important;
+}
+
+.theme-minecraft .mc-btn:hover {
+  background-color: #5c5f67 !important;
+  border-color: #949ba4 #2b2d31 #2b2d31 #949ba4 !important;
+}
+
+.theme-minecraft .mc-btn-gold {
+  background-color: #A36E53 !important;
+  border: 3px solid !important;
+  border-color: #d19a7e #503222 #503222 #d19a7e !important;
+  color: #FFFFFF !important;
+  text-shadow: 2px 2px 0px #000000 !important;
+  box-shadow: 3px 3px 0px #000000 !important;
+  border-radius: 0px !important;
+}
+
+.theme-minecraft .mc-btn-gold:hover {
+  background-color: #ba8163 !important;
+}
+
+.theme-minecraft .mc-pixel-img {
+  image-rendering: pixelated;
+  border-radius: 0px !important;
+  border: 3px solid #1e1f22 !important;
+}
+
+.theme-minecraft input,
+.theme-minecraft select {
+  font-family: 'Silkscreen', monospace !important;
+  border-radius: 0px !important;
+  border: 3px solid #1e1f22 !important;
+  box-shadow: inset 2px 2px 0px #000000 !important;
+}
